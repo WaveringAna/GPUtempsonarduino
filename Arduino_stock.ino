@@ -28,17 +28,4 @@ void loop() {
   lcd.print(GPUfan);             
   delay(2500);
   lcd.clear();                //Clear the lcd    
-
-  int reading = analogRead(sensorPin);
-  float voltage = reading * 5.0;
-  voltage /= 1024.0;
-  float temperatureC = (voltage - 0.5) * 100;
-  int MappedTemperatureC = map(temperatureC, 0, 30, 0, 255);
-  Serial.println(MappedTemperatureC);
-  SoftPWMSet(52, MappedTemperatureC);
-  lcd.setCursor(0, 0);
-  lcd.print("Temperature: ");
-  lcd.print(temperatureC);
-  delay(5000);
-  lcd.clear();
 }

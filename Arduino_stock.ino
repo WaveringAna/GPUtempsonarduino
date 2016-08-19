@@ -4,7 +4,7 @@
 
 String GPUfan;  //Fan speed
 String GPUtemp;  //GPU temp
-LiquidCrystal lcd(8, 9, 4, 5, 6, 7);		//Check your lcd to see what pins it uses, my OSEPP one uses these pins
+LiquidCrystal lcd(8, 9, 4, 5, 6, 7);		//Check your lcd to see what pins it uses, my OSEPP one uses these pins, Adafruit's lcd uses 7, 8, 9, 10, 11, 12
 
 int sensorPin = 7;
 

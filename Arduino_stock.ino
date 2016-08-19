@@ -22,7 +22,7 @@ void loop() {
     GPUtemp = Serial.readStringUntil('*');    
     GPUfan = Serial.parseFloat();
   }
-  lcd.print("GPUTemp:" + GPUtemp);
+  lcd.print("GPUTemp:" + GPUtemp + ' C');
   lcd.setCursor(0, 1);        //Move onto the second line
   lcd.print("GPUFanspeed:");
   lcd.print(GPUfan);             

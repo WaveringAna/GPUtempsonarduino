@@ -7,3 +7,5 @@ Requires httpspeedfan, python 2.7, pyserial, an arduino, and a lcd screen for th
 To configure it, just check the source files.
 
 To run it, compile and upload the arduino code first, then run the python code.
+
+http://imgur.com/Uvtr7Fi

@@ -1,5 +1,3 @@
-#include <SoftPWM.h>
-#include <SoftPWM_timer.h>
 #include <LiquidCrystal.h>
 
 String GPUfan;  //Fan speed
@@ -13,7 +11,6 @@ void setup() {
   Serial.begin(9600);
   lcd.begin(16, 2);
   lcd.setCursor(0, 0);
-  SoftPWMBegin(SOFTPWM_NORMAL); 
   delay(1000);
 }
 

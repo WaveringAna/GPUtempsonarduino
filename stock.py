@@ -3,7 +3,7 @@ import serial;
 from urllib import urlopen
 import xml.etree.ElementTree as ET
 
-ser = serial.Serial('COM3',9600);
+ser = serial.Serial('COM3',9600);     #replace COM3 to whatever port the arduino listens in your case, mine is com3
 while True:
 	u = urlopen('http://localhost:8167/?format=xml');     //From httpspeedfan
 	doc = ET.parse(u);
